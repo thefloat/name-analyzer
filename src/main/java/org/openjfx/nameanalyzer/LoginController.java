@@ -23,21 +23,13 @@ public class LoginController {
         // Add login logic here
 
         // On successful login, load home.fxml
-        Stage stage = (Stage) usernameField.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("home.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
+        App.setRoot("home");
     }
 
     @FXML
     protected void handleSignupAction(ActionEvent event) throws IOException {
         // Load signup.fxml
-        Stage stage = (Stage) usernameField.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("signup.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
+        App.setRoot("signup");
     }
 }
 

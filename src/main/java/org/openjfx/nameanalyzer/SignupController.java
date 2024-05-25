@@ -29,10 +29,6 @@ public class SignupController {
     @FXML
     protected void handleBackToLoginAction(ActionEvent event) throws IOException {
         // Load login.fxml
-        Stage stage = (Stage) usernameField.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
+        App.setRoot("login");
     }
 }

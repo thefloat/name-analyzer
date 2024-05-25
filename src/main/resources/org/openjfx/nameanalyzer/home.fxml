@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.openjfx.nameanalyzer.HomeController" alignment="center">
+    <Text fx:id="welcomeTxt" text="Welcome to the Home Page!" styleClass="heading"/>
+    <Button text="Logout" onAction="#handleLogoutAction" StackPane.alignment="BOTTOM_CENTER"/>
+</StackPane>

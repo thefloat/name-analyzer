@@ -9,7 +9,7 @@
 
 <GridPane fx:id="gridPane" alignment="center" hgap="10" vgap="10" stylesheets="@styles.css"
           xmlns:fx="http://javafx.com/fxml" fx:controller="org.openjfx.nameanalyzer.LoginController">
-    <Text text="Login" GridPane.columnSpan="2" styleClass="heading"/>
+    <Text text="Login" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="heading"/>
     <Text text="Username:"/>
     <TextField fx:id="usernameField" GridPane.columnIndex="1"/>
     <Text text="Password:" GridPane.rowIndex="1"/>

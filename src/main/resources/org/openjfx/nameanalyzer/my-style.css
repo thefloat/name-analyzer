@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/DancingScript-Bold.ttf) format('opentype');
+}
+
+.icon-font {
+    -fx-font-family: 'Dancing Script', cursive;
+    -fx-font-size: 30px;
+}
+
+.button {
+    -fx-background-radius: 30;
+}
+
+.circular-button {
+    -fx-background-radius: 50%; /* Make the button circular */
+    -fx-border-radius: 50%; /* Ensure border matches the circular shape */
+    -fx-border-color: transparent; /* Border color, optional */
+    -fx-border-width: 2; /* Border width, optional */
+}
+
+.circular-button:hover {
+    -fx-background-color: #005BBB; /* Change color on hover */
+}

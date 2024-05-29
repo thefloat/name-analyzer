@@ -6,8 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import org.kordamp.bootstrapfx.BootstrapFX;
-import org.kordamp.bootstrapfx.scene.layout.Panel;
 
 import java.io.IOException;
 
@@ -17,12 +15,12 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        scene = new Scene(loadFXML("login"));
-        scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
+        scene = new Scene(loadFXML("signup"));
+//        scene.getStylesheets().add(String.valueOf(getClass().getResource("my-style.css")));
 
         primaryStage.getIcons().add(new Image(String.valueOf(App.class.getResource("icon.jpg"))));
-        primaryStage.setMinWidth(600);
-        primaryStage.setMinHeight(400);
+        primaryStage.setMinWidth(400);
+        primaryStage.setMinHeight(600);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
